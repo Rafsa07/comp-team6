@@ -69,7 +69,7 @@ def main():
             outputs = model(images)
             loss = criterion(outputs, labels)
 
-            # fackward pass y optimizacion
+            # backward pass y optimizacion
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
