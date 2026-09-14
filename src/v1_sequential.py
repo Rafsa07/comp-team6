@@ -62,22 +62,45 @@ def main():
         epoch_start = time.time()
         running_loss = 0.0
         
+        # Acumuladores de tiempo para la época actual
+        data_time = 0.0
+        forward_time = 0.0
+        backward_time = 0.0
+        
+        # Marca de tiempo antes de cargar el primer batch
+        t0 = time.time()
         for images, labels in train_loader:
+            # Medición del tiempo de carga de datos
+            t1 = time.time()
+            data_time += (t1 - t0)
+            
             images, labels = images.to(device), labels.to(device)
 
             # forward pass
             outputs = model(images)
             loss = criterion(outputs, labels)
+            
+            # Medición del tiempo del forward pass
+            t2 = time.time()
+            forward_time += (t2 - t1)
 
             # backward pass y optimizacion
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+            
+            # Medición del tiempo del backward pass
+            t3 = time.time()
+            backward_time += (t3 - t2)
 
             running_loss += loss.item()
+            
+            # Reiniciar la marca de tiempo para el siguiente batch
+            t0 = time.time()
 
         epoch_time = time.time() - epoch_start
-        print(f"Época [{epoch+1}/{epochs}] - Loss: {running_loss/len(train_loader):.4f} - Tiempo: {epoch_time:.2f} s")
+        print(f"Época [{epoch+1}/{epochs}] - Loss: {running_loss/len(train_loader):.4f} - Tiempo Total: {epoch_time:.2f} s")
+        print(f"  -> Carga datos: {data_time:.4f} s | Forward: {forward_time:.4f} s | Backward: {backward_time:.4f} s")
 
     total_time = time.time() - start_time
     print(f"=== Entrenamiento completado en {total_time:.2f} segundos ===")
