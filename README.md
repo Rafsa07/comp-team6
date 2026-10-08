@@ -12,7 +12,7 @@ Repositorio del equipo 06 para las Prácticas 1–6 y el proyecto integrador.
 
 | Integrante | Boleta | Usuario GitHub | Rol / Contribución Principal |
 | :--- | :---: | :---: | :--- |
-| **Arguello Ruelas Israel** | 2024630719 | [kic0o](https://github.com/kic0o) | Benchmarks en Python, scripts de automatización y procesamiento de resultados/gráficas. |
+| **Arguello Ruelas Israel** | 2024630921 | [kic0o](https://github.com/kic0o) | Benchmarks en Python, scripts de automatización y procesamiento de resultados/gráficas. |
 | **Guerra Salinas Edgar Rafael** | 2025630505 | [Rafsa07](https://github.com/Rafsa07) | Entorno GPU (Colab/Kaggle), arquitectura del repositorio e integración del reporte final |
 | **Sanchez Rolon Pedro** | 2024630719 | [PedroSanchezRolon](https://github.com/PedroSanchezRolon) | Entorno nativo/WSL2, desarrollo del benchmark en C e inspección del compilador |
 
@@ -25,14 +25,14 @@ Repositorio del equipo 06 para las Prácticas 1–6 y el proyecto integrador.
 
 | Campo | Especificación |
 | :--- | :--- |
-| **Modelo de CPU** | 12th Gen Intel(R) Core(TM) i5-12500H  |
-| **Núcleos físicos / lógicos** | 12 núcleos / 16 hilos de procesamiento  |
-| **Caché L1d / L2 / L3** | 448 KiB (12 instancias) / 9 MiB (6 instancias) / 18 MiB (1 instancia)  |
-| **Memoria RAM** | 15 GB total  |
-| **Extensiones vectoriales** | avx, avx2, fma, sse4_2  |
+| **Modelo de CPU** | 12th Gen Intel(R) Core(TM) i5-12500H |
+| **Núcleos físicos / lógicos** | 12 núcleos / 16 hilos de procesamiento |
+| **Caché L1d / L2 / L3** | 448 KiB (12 instancias) / 9 MiB (6 instancias) / 18 MiB (1 instancia) |
+| **Memoria RAM** | 15 GB total |
+| **Extensiones vectoriales** | avx, avx2, fma, sse4_2 |
 | **Sistema operativo y kernel** | CachyOS Linux, kernel 7.2.9-1-cachyos |
 | **Compilador** | gcc (GCC) 16.2.1 20260810 |
-| **Python / NumPy / BLAS** | Python 3.14.7 / 2.5.3 / OpenBLAS 0.3.34.106.0 |
+| **Python / NumPy / BLAS** | Python 3.14.7 / NumPy 2.5.3 / OpenBLAS 0.3.34.106.0 |
 | **GPU Local / Acelerador** | NVIDIA GeForce RTX 3050 de 4096 MiB (4 GB) |
 | **Condiciones de medición** | Laptop conectada a corriente con Firefox y Visual Studio abiertos |
 
