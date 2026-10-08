@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CP-6BM1-Equipo06 — Cómputo Paralelo · 6BM1 · 27/1
 
 Repositorio del equipo 06 para las Prácticas 1–6 y el proyecto integrador.
@@ -8,6 +7,8 @@ Repositorio del equipo 06 para las Prácticas 1–6 y el proyecto integrador.
 |       Nombre        |   Boleta   |   Usuario GitHub   |
 |---------------------|------------|--------------------|
 | Sanchez Rolon Pedro | 2024630719 | PedroSanchezRolon  |
+| Guerra Salinas Edgar Rafael | 2025630505 | Rafsa07 |
+| Arguello Ruelas Israel | 2024630921 | kic0o | 
 | | | |
 | | | |
 
@@ -42,8 +43,9 @@ El objetivo principal es aplicar el patrón de **Paralelismo de Datos** (*Data P
 
 ## 👥 Integrantes del Equipo
 
+* **Arguello Ruelas Israel** - *Perfilado de código y Pruebas DDP*
 * **Guerra Salinas Edgar Rafael** - *Desarrollo V1/V2, Integración PyTorch y Benchmarking*
-* **Sanchez Rolon Pedro** - *Perfilado de código, Documentación H0-H2 y Pruebas DDP*
+* **Sanchez Rolon Pedro** - *Documentación H0-H2 *
 
 ---
 
