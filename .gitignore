@@ -1,1 +1,26 @@
+# Entornos virtuales
 .venv/
+cp-env/
+venv/
+env/
+
+# Caches y temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Binarios y ejecutables compilados de C/C++
+practicas/practica1/src/matmul_O0
+practicas/practica1/src/matmul_O2
+practicas/practica1/src/matmul_O3
+practicas/practica1/src/hello_omp
+*.o
+*.out
+*.exe
+
+# Configuraciones de IDE y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

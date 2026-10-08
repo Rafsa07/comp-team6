@@ -12,7 +12,9 @@ Esto es software libre; vea el código para las condiciones de copia.  NO hay
 garantía; ni siquiera para MERCANTIBILIDAD o IDONEIDAD PARA UN PROPÓSITO EN
 PARTICULAR
 
-/INSERTAR LA COMPROBACION DE PYTHON Y LUEGO ELIMINAR ESTA LINEA/
+    python3 --version && python3 -c "import numpy; print('numpy', numpy.__version__)"
+Python 3.12.3
+numpy 2.1.0
 
     git --version
 git version 2.56.0
